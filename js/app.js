@@ -21,13 +21,3 @@ vid.addEventListener("timeupdate", (e) => {
     e.target.currentTime = 0.0;
   }
 });
-
-  player.on('touchstart', function (e) {
-        if (e.target.nodeName === 'VIDEO') {
-            if (player.paused()) {
-                this.play();
-            } else {
-                this.pause();
-            }
-        }
-    });
