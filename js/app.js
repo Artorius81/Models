@@ -21,3 +21,13 @@ vid.addEventListener("timeupdate", (e) => {
     e.target.currentTime = 0.0;
   }
 });
+
+videojs.MediaTechController.prototype.onTap = function(){
+	if (this.player().controls()) {
+        if (this.player().paused()) {
+          this.player().play();
+        } else {
+          this.player().pause();
+        }
+      }
+    };
