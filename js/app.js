@@ -22,12 +22,12 @@ vid.addEventListener("timeupdate", (e) => {
   }
 });
 
-videojs.MediaTechController.prototype.onTap = function(){
-	if (this.player().controls()) {
-        if (this.player().paused()) {
-          this.player().play();
-        } else {
-          this.player().pause();
+  player.on('touchstart', function (e) {
+        if (e.target.nodeName === 'VIDEO') {
+            if (player.paused()) {
+                this.play();
+            } else {
+                this.pause();
+            }
         }
-      }
-    };
+    });
