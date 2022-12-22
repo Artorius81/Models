@@ -21,3 +21,4 @@ vid.addEventListener("timeupdate", (e) => {
     e.target.currentTime = 0.0;
   }
 });
+
