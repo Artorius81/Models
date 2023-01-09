@@ -4,7 +4,7 @@ if (mq.matches) {
 		freeMode: true,
 		centeredSlides: true,
 		mousewheel: true,
-		slidesPerView: 0.85,
+		slidesPerView: 0.65,
 	})
 }
 else {
@@ -12,7 +12,7 @@ else {
 		freeMode: true,
 		centeredSlides: true,
 		mousewheel: true,
-		slidesPerView: 2.85,
+		slidesPerView: 2.65,
 	})}
 
 const vid = document.querySelector(".video");
